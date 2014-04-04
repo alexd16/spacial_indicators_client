@@ -1,0 +1,47 @@
+<form ng-submit="newContextFormSubmitHandler(newContext)" class="form-horizontal" role="form">
+  <div class="modal-header">
+    <h3>Save Context</h3>
+  </div>
+  <div class="modal-body">
+      <div>
+        <label for="" class="col-lg-1 control-label">Name</label>
+        <div class="col-lg-7">
+          <input type="text" ng-model="newContext.name" class="form-control"/>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div>
+        <label for="" class="col-lg-1 control-label">Tags:</label>
+        <div class="col-lg-7">
+          <tags-input ng-model="newContext.tags"></tags-input>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <h4>Indicators Configuration</h4>
+      <div class="col-lg-6" ng-repeat="(iindex, indicator) in indicators">
+        <div class="panel panel-default">
+          <div class="panel-heading">{{indicator.name}}</div>
+          <div class="panel-body">
+            <p ng-hide="indicator.params">No configuration</p>
+            <div class="form-group" ng-repeat="(pindex, param) in indicator.params" ng-show="indicator.params">
+              <label for="" class="col-lg-2 control-label">{{param.name}}</label>
+              <div class="col-lg-10" ng-switch on="param.type">
+                <div ng-switch-when="multiple_options_list">
+                  <label  ng-repeat="option in param.options" class="checkbox-inline">
+                    <input type="checkbox" checklist-value="option" checklist-model="contextIndicators[iindex].config[param.name]">
+                    <span>{{option}}</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-primary pull-right">
+      Create Context
+    </button>
+  </div>
+</form>

@@ -1,0 +1,54 @@
+{
+  "name": "SpacialIndicators",
+  "version": "0.0.0",
+  "authors": [
+    "Alexandre Gonçalves <alexandre.dgoncalves@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "install": {
+    "path": {
+      "js": "src/vendor/js",
+      "css": "src/vendor/css",
+      "eot": "src/vendor/fonts",
+      "svg": "src/vendor/fonts",
+      "ttf": "src/vendor/fonts",
+      "woff": "src/vendor/fonts",
+      "png": "src/vendor/css/images"
+    },
+    "ignore": [
+      "jquery"
+    ],
+    "sources": {
+      "bootstrap": [
+        "bower_components/bootstrap/dist/css/bootstrap.css",
+        "bower_components/bootstrap/dist/fonts/*"
+      ],
+      "leaflet.draw": [
+        "bower_components/leaflet.draw/dist/leaflet.draw-src.js",
+        "bower_components/leaflet.draw/dist/leaflet.draw.css",
+        "bower_components/leaflet.draw/dist/images/*"
+      ]
+    }
+  },
+  "dependencies": {
+    "angular": "~1.2.14",
+    "bootstrap": "~3.1.1",
+    "angular-ui-router": "~0.2.10",
+    "restangular": "~1.3.1",
+    "leaflet.draw": "~0.2.3",
+    "angularjs-nvd3-directives": "~0.0.5-beta",
+    "ng-file-upload": "~1.2.10",
+    "angular-loading-bar": "~0.3.0",
+    "ng-tags-input": "~1.1.1",
+    "checklist-model": "~0.1.3",
+    "angular-ui-bootstrap-bower": "~0.10.0"
+  }
+}

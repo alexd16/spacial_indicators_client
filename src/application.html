@@ -1,0 +1,48 @@
+<html ng-app="app">
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <link rel="stylesheet" href="/vendor/css/leaflet.draw.css">
+    
+    <!--<link rel="stylesheet" href="/vendor/css/nv.d3.css"> -->
+    
+    <link rel="stylesheet" href="/vendor/css/bootstrap.css">
+    
+    <link rel="stylesheet" href="/vendor/css/loading-bar.css">
+    <link rel="stylesheet" href="/vendor/css/ng-tags-input.min.css">
+
+    <link rel="stylesheet" href="/app/css/base.css">
+    <link rel="stylesheet" href="/app/css/layout.css">
+    <link rel="stylesheet" href="/app/css/modules.css">
+    <link rel="stylesheet" href="/app/css/theme.css">
+
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+    <script src="/vendor/js/leaflet.draw-src.js"></script>
+  </head>
+  <body ng-controller="AppController">
+    <header>
+        <div ng-include="'app/partials/nav.html'"></div>
+    </header>
+    <div ui-view></div>
+
+    <script src="/vendor/js/lodash.compat.js"></script>
+    <script src="/vendor/js/angular.js"></script>
+    <script src="/vendor/js/angular-ui-router.js"></script>
+    <script src="/vendor/js/restangular.js"></script>
+    <script src="/vendor/js/ui-bootstrap-tpls.js"></script>
+
+    <script src="/vendor/js/d3.js"></script>
+    <script src="/vendor/js/nv.d3.js"></script>
+    <script src="/vendor/js/angularjs-nvd3-directives.js"></script>
+
+    <script src="/vendor/js/angular-file-upload-shim.js"></script>
+    <script src="/vendor/js/angular-file-upload.js"></script>
+
+    <script src="/vendor/js/loading-bar.js"></script>
+    <script src="/vendor/js/ng-tags-input.min.js"></script>
+    <script src="/vendor/js/checklist-model.js"></script>
+  
+    <!-- build:app_js -->
+    <!-- endbuild -->
+  </body>
+</html>

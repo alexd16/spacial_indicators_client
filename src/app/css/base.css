@@ -1,0 +1,19 @@
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding-top: 51px;
+}
+
+nav {
+  border-radius: 0 !important;
+}
+
+.modal-dialog {
+  width: 1000px;
+}
+
+

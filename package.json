@@ -1,0 +1,23 @@
+{
+  "name": "spacial_indicators_client",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-coffee": "^1.4.1",
+    "gulp-connect": "^1.0.10",
+    "multi-glob": "^0.4.0",
+    "gulp-util": "^2.2.14",
+    "gulp-html-replace": "^1.0.0",
+    "gulp-sass": "^0.7.1",
+    "gulp-rename": "^1.2.0",
+    "proxy-middleware": "^0.5.0",
+    "url": "^0.7.9"
+  }
+}

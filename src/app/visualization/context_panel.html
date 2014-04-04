@@ -1,0 +1,28 @@
+<div ng-controller="ContextOptionsController">
+  <button class="btn btn-primary l-left-buffer l-bottom-buffer options-button" ng-click="openPanelButtonHandler()"></button>
+  <div class="panel panel-default l-reset-bottom-margin l-left-buffer l-right-buffer" ng-show="isPanelOpen">
+    <div class="panel-heading">
+      <h3 class="panel-title">Context</h3>
+    </div>
+    <div class="panel-body">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+        <strong>Dataset Info</strong>
+        <div class="l-top-buffer">
+          <div><strong>Name: </strong>{{dataset.name}}</div>
+          <div><strong>Size: </strong>{{dataset.numberOfObjects}}</div>
+          <div><strong>Spacial Type:</strong>Point</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+        <strong>Spacial Info</strong>
+        <div class="l-top-buffer">
+          <div><strong>Number Of Objects: </strong>{{context.pointsDrawn}}</div>
+          <div><strong>Zoom Level: </strong>{{context.zoomLevel}}</div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
+        <button class="btn btn-primary" ng-click="saveContextButtonHandler()">Save Context</button>
+      </div>
+    </div>
+  </div>
+</div>

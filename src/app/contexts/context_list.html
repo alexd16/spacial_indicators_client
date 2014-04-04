@@ -1,0 +1,10 @@
+<div class="col-lg-3 l-full-height dark-color l-reset-top-padding">
+  <div class="list-group dark-color l-top-buffer">
+    <a ng-repeat="context in contexts" class="list-group-item" ui-sref="contexts.context({id: context._id.$oid})">
+      {{context.name}}
+    </a>
+  </div>
+</div>
+<div class="col-lg-9 l-reset-right-padding" ui-view>
+  
+</div>
