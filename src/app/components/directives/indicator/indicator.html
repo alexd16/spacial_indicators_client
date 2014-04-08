@@ -1,5 +1,4 @@
-<div class="col-lg-4">
-  <h3>Indicator {{name}}</h3>
+<div>
   <div ng-switch on="type">
     <div ng-switch-when="single_value">
       {{data}}
@@ -8,18 +7,18 @@
       <nvd3-multi-bar-chart
         id="{{id}}"
         data="data"
-        width="400"
-        height="400"
         showXAxis="true"
-        showYAxis="true">
+        showYAxis="true"
+        height="350"
+        
+        >
       </nvd3-multi-bar-chart>
     </div>
     <div ng-switch-when="pair_collection">
       <nvd3-scatter-chart
         id="{{id}}"
         data="data"
-        width="400"
-        height="400">
+        height="350">
       </nvd3-scatter-chart>
     </div>
   </div>

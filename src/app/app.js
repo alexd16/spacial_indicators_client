@@ -49,6 +49,27 @@ app
           }
         }
       })
+      .state('compare', {
+        url: '/compare?ids&selectedIndicator',
+        templateUrl: 'app/visualization/compare/compare.html',
+        controller: 'CompareController',
+        resolve: {
+          contexts: function($stateParams, ContextResource){
+            var contexts = [];
+            var ids = arrayFormat('ids', JSON.parse($stateParams.ids));
+            return ContextResource.getList({q:  {context_ids: JSON.parse($stateParams.ids)} });
+
+            function arrayFormat(key, array){
+              var str = '';
+              return key+'[]='+array.join('&'+key+'[]=');
+            }
+          },
+          indicatorIndex: function($stateParams){
+            var indicatorIndex = $stateParams.selectedIndicator;
+            return indicatorIndex;
+          }
+        }
+      })
   })
   .config(function(RestangularProvider){
     RestangularProvider.setBaseUrl('/api');
@@ -56,6 +77,18 @@ app
       id: "_id.$oid"
     });
   })
+  .value('mapDefault', {
+    center: {
+      latitude: 39.7232,
+      longitude: -8.23231
+    },
+    zoom: 7
+  })
+  .value('selectedDataset', {
+    name: '',
+    id: 0
+  })
+  ;
 
 app.controller('AppController', function($scope){
   

@@ -1,0 +1,12 @@
+<div ng-switch on="contexts.length">
+  <div ng-switch-when="3">
+    <div class="col-lg-4 large-map l-reset-left-padding l-reset-right-padding" ng-repeat="(index, context) in contexts">
+      <div ng-include="'app/visualization/compare/compare_partial.html'"></div>
+    </div>
+  </div>
+  <div ng-switch-when="2">
+    <div class="col-lg-6 large-map l-reset-left-padding l-reset-right-padding" ng-repeat="(index, context) in contexts">
+      <div ng-include="'app/visualization/compare/compare_partial.html'"></div>
+    </div>
+  </div>
+</div>

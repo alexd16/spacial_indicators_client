@@ -1,4 +1,20 @@
-<div>
-  <h1>Hello Home</h1>
-  <p>{{message}}</p>
+<div class="relative">
+  <map center="map.center" zoom="context.zoomLevel" slice="context.sliceBounds">
+    <slice-control></slice-control>
+    <layer 
+      data="layer.data" 
+      config="layer.config" 
+      type="layer.type"
+      bounds="context.boundingBox"
+      points-drawn= "context.pointsDrawn">
+    </layer>
+  </map>
+  <div class="l-bottom l-full-width">
+    <div class="panel panel-default l-reset-bottom-margin l-left-buffer l-right-buffer">
+      <div class="panel-body">
+        <h1>sdfsedf</h1>
+        <p>{{context | json}}</p>
+      </div>
+    </div>
+  </div>
 </div>

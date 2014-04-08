@@ -8,8 +8,9 @@
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">
         <strong>Dataset Info</strong>
         <div class="l-top-buffer">
+          <div><strong>ID: </strong>{{dataset.id}}</div>
           <div><strong>Name: </strong>{{dataset.name}}</div>
-          <div><strong>Size: </strong>{{dataset.numberOfObjects}}</div>
+          <div><strong>Size: </strong>{{context.numberOfObjects}}</div>
           <div><strong>Spacial Type:</strong>Point</div>
         </div>
       </div>
@@ -18,6 +19,8 @@
         <div class="l-top-buffer">
           <div><strong>Number Of Objects: </strong>{{context.pointsDrawn}}</div>
           <div><strong>Zoom Level: </strong>{{context.zoomLevel}}</div>
+          <div><strong>Bounding Box: </strong>{{context.boundingBox}}</div>
+          <div><strong>Slice Bounds: </strong>{{context.sliceBounds}}</div>
         </div>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 text-center">

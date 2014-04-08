@@ -4,11 +4,18 @@
   content: '☰';
 }
 
+.wide-modal .modal-dialog{
+  width: 1000px;
+}
+
 .litle-map {
   
 }
 
-.litle-map #map {
+.litle-map .map {
   height: 400px !important;
-  overflow-y: hidden;
+}
+
+.large-map .map {
+  height: 50% !important;
 }

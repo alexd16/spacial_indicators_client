@@ -1,0 +1,27 @@
+<map 
+  center="maps[index].center"
+  zoom="context.zoomLevel"
+  slice="context.sliceBounds">
+  <layer
+    type="layers[index].type"
+    config="layers[index].config"
+    data="context.data"
+    bounds="context.boundingBox"
+    points-drawn="context.pointsDrawn">
+  </layer>
+</map>
+<div class="panel panel-default l-reset-bottom-margin" style="height: 50%">
+  <div class="panel-heading">
+    {{context.name}}
+    <a ui-sref="contexts.context({id: context._id.$oid})">
+      <span class="glyphicon glyphicon-eye-open pull-right"></span>  
+    </a>
+  </div>
+  <div class="panel-body l-reset-bottom-padding">
+    <indicator 
+      result="context.context_indicators[indicatorIndex].result" 
+      type="context.context_indicators[indicatorIndex].result.type" 
+      name="context.context_indicators[indicatorIndex].name">
+    </indicator>  
+  </div>
+</div>

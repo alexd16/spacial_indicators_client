@@ -1,26 +1,37 @@
 <div class="l-full-height l-full-width">
   <div class="panel panel-default l-top-buffer l-right-buffer">
     <div class="panel-heading">
-      <h1 class="panel-title">{{selectedContext.name}}</h1>
+      <h1 class="panel-title">{{context.name}}</h1>
+      <p>{{compareList | json}}</p>
     </div>
     <div class="panel-body">
       <div class="col-lg-5">
-        <div class="col-lg-4">
+        <div class="col-lg-6">
           <p><strong>Name: </strong></p>
           <p><strong>Number of Objects: </strong></p>
           <p><strong>Zoom Level: </strong></p>
           <p><strong>Objects Drawn: </strong></p>
+          <p><strong>Notes: </strong></p>
         </div>
         <div class="col-lg-6">
           <p>{{dataset.name}}</p>
-          <p>{{dataset.size}}</p>
-          <p>{{selectedContext.zoomLevel}}</p>
-          <p>{{selectedContext.pointsDrawn}}</p>
+          <p>{{context.numberOfObjects}}</p>
+          <p>{{context.zoomLevel}}</p>
+          <p>{{context.pointsDrawn}}</p>
+        </div>
+        <div class="l-left-buffer">
+          <textarea name="" id="" cols="60" rows="10"></textarea>
+          <p class="text-right"><button class="btn btn-primary l-top-buffer">Save Notes</button></p>
         </div>
       </div>
       <div class="col-lg-7 litle-map">
-        <map> 
-          <dot-layer points="map.points" dot-size="map.dotSize"></dot-layer>
+        <map center="mapOptions.center" zoom="context.zoomLevel" slice="context.sliceBounds">
+          <layer
+            type="layerOptions.type"
+            config="layerOptions.config"
+            data="data"
+            bounds="context.boundingBox"
+            points-drawn= "context.pointsDrawn">
         </map>
       </div>
     </div>
@@ -28,12 +39,15 @@
   <div class="panel panel-default l-top-buffer l-right-buffer">
     <div class="panel-heading">Computed Indicators</div>
     <div class="panel-body">
-      <indicator 
-        result="indicator.result" 
-        type="indicator.result.type" 
-        name="indicator.name" 
-        ng-repeat="indicator in selectedContext.context_indicators">
-      </indicator>       
+      <div class="col-lg-6" ng-repeat="indicator in context.context_indicators" style="height: 500px">
+        <h3>{{indicator.name}}</h3>
+        <indicator 
+          result="indicator.result" 
+          type="indicator.result.type" 
+          name="indicator.name">
+        </indicator>               
+      </div>
+      <div class="clearfix"></div>
     </div>
   </div>
 </div>

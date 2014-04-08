@@ -12,8 +12,16 @@ nav {
   border-radius: 0 !important;
 }
 
-.modal-dialog {
-  width: 1000px;
+.reset-left-border-radius {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
 }
 
+.reset-right-border-radius {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
 
+.reset-line-height {
+  line-height: normal;
+}

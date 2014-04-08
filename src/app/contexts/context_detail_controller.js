@@ -1,12 +1,20 @@
 var app = angular.module('app');
 
-app.controller('ContextDetailController', function($scope, context, DatasetResource){
+app.controller('ContextDetailController', function($scope, context, mapDefault, DatasetResource){
 
+  $scope.mapOptions = mapDefault;
+  $scope.layerOptions = {
+    type: 'dot-layer', 
+    config: {
+      dotSize: 0
+    }
+  }
 
+  if(context.sliceBounds === undefined){
+    context.sliceBounds = {};
+  }
 
-  $scope.selectedContext = context;
-  $scope.map = {}
-
+  $scope.context = context;
 
   DatasetResource.get(context.dataset_id.$oid)
     .then(function(dataset){
@@ -14,9 +22,8 @@ app.controller('ContextDetailController', function($scope, context, DatasetResou
       return dataset.getData();
     })
     .then(function(data){
-      $scope.dataset.size = data.length;
-      $scope.map.points = data;
-      $scope.map.dotSize = 0;
+      $scope.data = data;
+      $scope.context.numberOfObjects = data.length
       console.log(data);
     });
 

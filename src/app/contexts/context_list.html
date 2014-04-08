@@ -1,10 +1,26 @@
-<div class="col-lg-3 l-full-height dark-color l-reset-top-padding">
-  <div class="list-group dark-color l-top-buffer">
-    <a ng-repeat="context in contexts" class="list-group-item" ui-sref="contexts.context({id: context._id.$oid})">
-      {{context.name}}
-    </a>
+<div class="col-lg-4 l-full-height dark-color l-reset-top-padding">
+  <div class="dark-color l-top-buffer">
+    <div>
+      <button class="btn btn-primary" ng-click="compareButtonHandler(compareList)">Compare</button>
+    </div>
+    <div class="l-top-buffer">
+      <div class="col-lg-1">
+        <div class="list-group">
+          <button ng-repeat="context in contexts" class="list-group-item reset-right-border-radius">
+            <input type="checkbox" checklist-value="context._id.$oid" checklist-model="compareList">
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-10">
+        <div class="list-group reset-line-height">
+          <a ng-repeat="context in contexts" class="list-group-item reset-left-border-radius" ui-sref="contexts.context({id: context._id.$oid})" ui-sref-active="active">
+            {{context.name}}
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-<div class="col-lg-9 l-reset-right-padding" ui-view>
+<div class="col-lg-8 l-reset-right-padding" ui-view>
   
 </div>

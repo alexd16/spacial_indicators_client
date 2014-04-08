@@ -1,15 +1,10 @@
 var app = angular.module('app');
 
-app.controller('NewContextModalController',function($scope, context, $modalInstance, IndicatorResource, ContextResource){
+app.controller('NewContextModalController',function($scope, context, selectedDataset, $modalInstance, IndicatorResource, ContextResource){
   var newContext = angular.copy(context);
-  newContext.dataset_id = newContext.datasetId;
-  delete newContext.datasetId;
-  var datasetName = newContext.datasetName
-  delete newContext.datasetName
-
 
   var now = new Date();
-  newContext.name = datasetName+' '+ now.toLocaleDateString('en-US')+' '+now.toLocaleTimeString("en-US")
+  newContext.name = selectedDataset.name+' '+ now.toLocaleDateString('en-US')+' '+now.toLocaleTimeString("en-US")
   newContext.tags = [];
 
   IndicatorResource.getList().then(function(indicators){
