@@ -2,7 +2,6 @@
   <div class="panel panel-default l-top-buffer l-right-buffer">
     <div class="panel-heading">
       <h1 class="panel-title">{{context.name}}</h1>
-      <p>{{compareList | json}}</p>
     </div>
     <div class="panel-body">
       <div class="col-lg-5">
@@ -20,8 +19,8 @@
           <p>{{context.pointsDrawn}}</p>
         </div>
         <div class="l-left-buffer">
-          <textarea name="" id="" cols="60" rows="10"></textarea>
-          <p class="text-right"><button class="btn btn-primary l-top-buffer">Save Notes</button></p>
+          <textarea ng-model="currentNotes" cols="60" rows="10"></textarea>
+          <p class="text-right"><button ng-click="saveNotesButtonHandler(context, currentNotes)" class="btn btn-primary l-top-buffer">Save Notes</button></p>
         </div>
       </div>
       <div class="col-lg-7 litle-map">
@@ -41,6 +40,7 @@
     <div class="panel-body">
       <div class="col-lg-6" ng-repeat="indicator in context.context_indicators" style="height: 500px">
         <h3>{{indicator.name}}</h3>
+        <p>{{indicator.config | json}}</p>
         <indicator 
           result="indicator.result" 
           type="indicator.result.type" 

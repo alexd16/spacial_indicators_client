@@ -1,8 +1,9 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
    <ul class="nav navbar-nav">
-    <li class="dropdown">
-      <a class="dropdown-toggle">Select Dataset</a>
-      <ul class="dropdown-menu" ng-controller="DatasetListController">
+    <li class="dropdown" ng-controller="DatasetListController">
+      <a class="dropdown-toggle" ng-hide="selectedDataset.name">Select Dataset</a>
+      <a class="dropdown-toggle" ng-show="selectedDataset.name">{{selectedDataset.name}}</a>
+      <ul class="dropdown-menu">
         <li ng-hide="datasets"><a>No datasets</a></li>
         <li ng-repeat="dataset in datasets" ng-if="datasets">
           <a ui-sref="visualization({id: dataset._id.$oid})">{{dataset.name}}</a>

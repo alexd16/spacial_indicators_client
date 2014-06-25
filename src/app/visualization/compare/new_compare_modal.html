@@ -3,14 +3,19 @@
 </div>
 <div class="modal-body">
   <form ng-submit="submitCompareFormHandler(compareOptions)" class="form-inline" role="form">
-    <div class="form-group">
-      <select 
-        class="form-control"
-        ng-model="compareOptions.selectedIndicator"
-        ng-options="indicator.index as indicator.name for indicator in indicators">
-      </select>      
+    <div class="col-lg-6" ng-repeat="(index, context) in contexts">
+      <p>{{context.name}}</p>
+      <p>Config: {{context.context_indicators[compareOptions.selectedIndicators[index]].config}}</p>
+      <div class="form-group">
+        <select 
+          class="form-control"
+          ng-model="compareOptions.selectedIndicators[index]"
+          ng-options="indicator._id.$oid as indicator.name for (iindex, indicator) in context.context_indicators">
+        </select>
+      </div>
     </div>
-    <div class="form-group">
+    <div class="clearfix top-buffer"></div>
+    <div class="form-group l-top-buffer">
       <button type="submit" class="form-control btn btn-primary">Compare</button>  
     </div>
   </form>

@@ -11,7 +11,7 @@ app.controller('NewContextModalController',function($scope, context, selectedDat
     $scope.indicators = indicators;
     $scope.contextIndicators = _.map(indicators, initIndicator);
 
-    newContext.context_indicators = $scope.contextIndicators;
+    newContext.context_indicators_attributes = $scope.contextIndicators;
   })
 
   $scope.newContextFormSubmitHandler = function(_context){
@@ -21,11 +21,16 @@ app.controller('NewContextModalController',function($scope, context, selectedDat
     });
   }
 
+  $scope.addContextIndicator = function(indicator){
+    var contextIndicator = initIndicator(indicator);
+    newContext.context_indicators.push(contextIndicator);
+  }
+
   function initIndicator(indicator){
-    var contextIndicator = {name: indicator.name, compute: true}
+    var contextIndicator = {name: indicator.name, indicator_id: indicator._id.$oid, compute: true}
     contextIndicator.config = {};
     _.each(indicator.params, function(param){
-      contextIndicator.config[param.name] = param.default;
+      contextIndicator.config[param.name] = angular.copy(param.default);
     });
     return contextIndicator;
   }

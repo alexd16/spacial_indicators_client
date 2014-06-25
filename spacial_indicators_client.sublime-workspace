@@ -4,16 +4,24 @@
 		"selected_items":
 		[
 			[
+				"con",
+				"contextIds"
+			],
+			[
+				"co",
+				"contexts"
+			],
+			[
+				"conte",
+				"contextIndicator"
+			],
+			[
 				"pa",
 				"padding-bottom"
 			],
 			[
 				"la",
 				"layerOptions"
-			],
-			[
-				"con",
-				"contexts"
 			],
 			[
 				"staet",
@@ -90,10 +98,6 @@
 			[
 				"overl",
 				"overflow-y:   (property)"
-			],
-			[
-				"conte",
-				"context_id"
 			],
 			[
 				"back-",
@@ -510,44 +514,56 @@
 			[
 				"br",
 				"brk2"
-			],
-			[
-				"dist",
-				"distribution"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "src/app/visualization/compare/compare.html",
+			"file": "src/app/contexts/context_list_controller.js",
 			"settings":
 			{
-				"buffer_size": 540,
+				"buffer_size": 1179,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/app/components/directives/indicator/indicator.html",
+			"file": "src/app/app.js",
 			"settings":
 			{
-				"buffer_size": 566,
+				"buffer_size": 2678,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/app/components/directives/indicator/indicator.js",
+			"file": "/home/alexd16/Documents/projects/genlogo/logo.svg",
 			"settings":
 			{
-				"buffer_size": 929,
+				"buffer_size": 10008,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/app/visualization/compare/compare_partial.html",
+			"file": "src/app/components/services/context_indicator_resource.js",
 			"settings":
 			{
-				"buffer_size": 715,
+				"buffer_size": 148,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/visualization/compare/new_compare_modal.html",
+			"settings":
+			{
+				"buffer_size": 889,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/app/components/services/context_resource.js",
+			"settings":
+			{
+				"buffer_size": 397,
 				"line_ending": "Unix"
 			}
 		}
@@ -555,9 +571,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 382.0,
+		"height": 400.0,
 		"selected_items":
 		[
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
 			[
 				"html",
 				"Set Syntax: HTML"
@@ -565,10 +585,6 @@
 			[
 				"insta",
 				"Package Control: Install Package"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
 			],
 			[
 				"",
@@ -595,7 +611,7 @@
 				"Set Syntax: Ruby"
 			]
 		],
-		"width": 457.0
+		"width": 583.0
 	},
 	"console":
 	{
@@ -615,61 +631,83 @@
 	},
 	"file_history":
 	[
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/index.html",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp-util/lib/isNull.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/directives/indicator/indicator.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/directives/indicator/indicator.html",
+		"/home/alexd16/Documents/projects/genlogo/logo.svg",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/contexts/context_detail.html",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/context_panel.html",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/angular-loading-bar/CHANGELOG.md",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/contexts/context_detail.html",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/contexts/context_list.html",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/contexts/context_detail_controller.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/contexts/context_list_controller.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/visualization_controller.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/application.html",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/directives/indicator/param.html",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp-html-replace/lib/parser.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/package.json",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/new_context_modal_controller.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/new_context_modal.html",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/partials/nav.html",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/spacial_indicators_client.sublime-project",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp/node_modules/chalk/node_modules/.bin/strip-ansi",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/visualization.html",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/datasets/dataset_resource.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/services/context_resource.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/css/modules.css",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/jquery/src/traversing.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/contexts/context_list.html",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/url/node_modules/punycode/vendor/requirejs/tests/circular/complexPlugin/complexPlugin-tests.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp-connect/node_modules/connect/node_modules/multiparty/test/standalone/test-connection-aborted.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp-connect/node_modules/connect/node_modules/multiparty/test/standalone/test-invalid.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/angular-ui-router/src/stateDirectives.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/directives/map/dot_layer.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/directives/map/layer.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/css/layout.css",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/angular-loading-bar/LICENSE",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/datasets/dataset_resource.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/visualization_controller.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/app.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/css/modules.css",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/compare/compare_partial.html",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/compare/new_compare_modal.html",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/compare/new_compare_modal_controller.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/contexts/context_list_controller.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/compare/compare_controller.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/compare/compare.html",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/angular-loading-bar/LICENSE",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/directives/indicator/indicator.html",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/index.html",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp-util/lib/isNull.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/bootstrap/test-infra/npm-shrinkwrap.canonical.json",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/context_options_controller.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/url/node_modules/punycode/vendor/requirejs/tests/version1/omega.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower.json",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/css/base.css",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/directives/indicator/indicator.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/contexts/context_detail_controller.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp-connect/node_modules/tiny-lr/node_modules/faye-websocket/examples/haproxy.conf",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/url/node_modules/punycode/vendor/requirejs/tests/text/textOnly.html",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/services/indicator_resource.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/directives/indicator/param.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/services/context_resource.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/datasets/dataset_create_modal.html",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/datasets/dataset_create_modal_controller.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/datasets/dataset_list_controller.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/directives/map/map.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/url/node_modules/punycode/vendor/requirejs/tests/funcOne.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/url/node_modules/punycode/vendor/requirejs/tests/browsertests/onerror/scriptError.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/jquery/src/selector.js",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/angularjs-nvd3-directives/examples/discreteBar.with.automatic.resize.html",
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/url/node_modules/punycode/vendor/requirejs/tests/jquery/scripts/app.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/jquery/src/data.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/angularjs-nvd3-directives/src/directives/nvD3AxisConfiguration.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/d3/d3.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/directives/map/layer.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/directives/map/dot_layer.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/url/node_modules/punycode/vendor/qunit/addons/composite/composite-demo-test.html",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/vendor/css/bootstrap.css",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp-sass/node_modules/node-sass/bin/darwin-x64-v8-3.14/binding.node",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp-util/node_modules/vinyl/lib/isStream.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/compare/new_compare_modal.html",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/compare/new_compare_modal_controller.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/app.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/datasets/dataset_create_modal_controller.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/new_context_modal.html",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/datasets/dataset_create_modal.html",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/bootstrap/less/modals.less",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/bootstrap/js/modal.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/context_options_controller.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/css/base.css",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower.json",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/multi-glob/node_modules/glob/test/new-glob-optional-options.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/visualization/new_context_modal_controller.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/package.json",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/partials/nav.html",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/jquery/src/effects.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp-sass/node_modules/node-sass/libsass/emscripten_wrapper.cpp",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/angularjs-nvd3-directives/src/directives/nvD3Events.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/directives/map/slice_control.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/directives/map/map.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/spacial_indicators_client.sublime-project",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/angular-ui-router/src/compat.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/angular-ui-router/src/common.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/bootstrap/less/panels.less",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/services/current_context.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp-connect/node_modules/connect/node_modules/express-session/node_modules/cookie/test/mocha.opts",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/angularjs-nvd3-directives/examples/discreteBar.with.automatic.resize.html",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp-sass/node_modules/node-sass/libsass/output_nested.cpp",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/url/node_modules/punycode/vendor/requirejs/tests/plugins/nameOnly-tests.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/url/node_modules/punycode/vendor/requirejs/tests/defineError/defineError-tests.js",
@@ -685,9 +723,7 @@
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp-connect/node_modules/connect/node_modules/multiparty/test/fixture/http/encoding/menu_seperator.png.http",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp/node_modules/liftoff/lib/parse_options.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp-connect/node_modules/connect/node_modules/multiparty/test/fixture/http/special-chars-in-filename/osx-chrome-13.http",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/application.html",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp/node_modules/gulp-util/node_modules/minimist/test/dotted.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/datasets/dataset_list_controller.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/leaflet.draw/src/Control.Draw.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/d3/CONTRIBUTING.md",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/jquery/src/var/hasOwn.js",
@@ -719,34 +755,14 @@
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp-connect/node_modules/connect/lib/middleware/basicAuth.js",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/node_modules/gulp-coffee/node_modules/event-stream/node_modules/from/LICENSE.APACHE2",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/bootstrap/less/navbar.less",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/components/services/indicator_resource.js",
 		"/home/alexd16/Documents/projects/spacial_analysis_project/spacial_analysis/src/app/components/directives/map/map.js",
 		"/home/alexd16/Documents/projects/spacial_analysis_project/spacial_analysis/src/application.html",
 		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/angular-ui-router/src/viewScroll.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/angular-ui-router/src/view.js",
-		"/home/alexd16/Documents/projects/spacial_analysis_project/spacial_analysis/src/app/datasets/dataset_viz.html",
-		"/home/alexd16/Documents/projects/spacial_analysis_project/spacial_analysis/src/app/components/directives/map/dot_layer.js",
-		"/home/alexd16/Documents/projects/spacial_analysis_project/spacial_analysis/src/app/css/base.css",
-		"/home/alexd16/Documents/projects/spacial_analysis_project/spacial_analysis/src/app/css/layout.css",
-		"/home/alexd16/Documents/projects/spacial_analysis_project/spacial_analysis/src/app/css/modules.css",
-		"/home/alexd16/Documents/projects/spacial_analysis_project/spacial_analysis/src/app/datasets/dataset.js",
-		"/home/alexd16/Documents/projects/spacial_analysis_project/spacial_analysis/src/app/datasets/dataset_list_controller.js",
-		"/home/alexd16/Documents/projects/spacial_analysis_project/spacial_analysis/src/app/datasets/dataset_creation_modal.html",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/routes.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/gulpfile.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/datasets/datasets.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/vendor.js",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/app_controller.js",
-		"/home/alexd16/Documents/projects/spacial_analysis_project/spacial_analysis/bower.json",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/gulpfile.coffee",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/sass/base.scss",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/public/index.html",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/app_controller.coffee",
-		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/src/app/app.coffee"
+		"/home/alexd16/Documents/projects/thesis/spacial_indicators/spacial_indicators_client/bower_components/angular-ui-router/src/view.js"
 	],
 	"find":
 	{
-		"height": 36.0
+		"height": 33.0
 	},
 	"find_in_files":
 	{
@@ -761,6 +777,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"id",
+			"p",
+			"group",
+			"button",
+			"iindex",
 			"dataset",
 			"selectedIndicator",
 			"left",
@@ -883,12 +904,7 @@
 			"canvas_to_map",
 			"binding.pry",
 			"to_rad",
-			"r_map",
-			"longitude",
-			"latitude",
-			"p",
-			"data",
-			"binding.pry"
+			"r_map"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -906,84 +922,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/app/visualization/compare/compare.html",
+					"file": "src/app/contexts/context_list_controller.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 540,
+						"buffer_size": 1179,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								498,
-								498
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/app/components/directives/indicator/indicator.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 566,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								510,
-								510
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/app/components/directives/indicator/indicator.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 929,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								417,
-								417
+								1146,
+								1146
 							]
 						],
 						"settings":
@@ -996,24 +952,110 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "src/app/visualization/compare/compare_partial.html",
+					"buffer": 1,
+					"file": "src/app/app.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 715,
+						"buffer_size": 2678,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								281,
-								281
+								2073,
+								2073
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 741.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/alexd16/Documents/projects/genlogo/logo.svg",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10008,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10008,
+								10008
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/app/components/services/context_indicator_resource.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/app/visualization/compare/new_compare_modal.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								575,
+								575
 							]
 						],
 						"settings":
@@ -1021,6 +1063,34 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/app/components/services/context_resource.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 397,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1079,28 +1149,120 @@
 		"selected_items":
 		[
 			[
+				"contextres",
+				"src/app/components/services/context_resource.js"
+			],
+			[
+				"appjs",
+				"src/app/app.js"
+			],
+			[
+				"param",
+				"src/app/components/directives/indicator/param.html"
+			],
+			[
+				"newconte",
+				"src/app/visualization/new_context_modal.html"
+			],
+			[
+				"contextmodal",
+				"src/app/visualization/new_context_modal_controller.js"
+			],
+			[
+				"layer",
+				"src/app/components/directives/map/layer.js"
+			],
+			[
+				"dotlayer",
+				"src/app/components/directives/map/dot_layer.js"
+			],
+			[
+				"visu",
+				"src/app/visualization/visualization.html"
+			],
+			[
+				"app",
+				"src/application.html"
+			],
+			[
 				"indica",
-				"src/app/components/directives/indicator/indicator.js"
+				"src/app/components/directives/indicator/indicator.html"
+			],
+			[
+				"comparepart",
+				"src/app/visualization/compare/compare_partial.html"
 			],
 			[
 				"compare",
 				"src/app/visualization/compare/compare.html"
 			],
 			[
+				"modu",
+				"src/app/css/modules.css"
+			],
+			[
 				"contextli",
 				"src/app/contexts/context_list.html"
 			],
 			[
-				"contextlist",
-				"src/app/contexts/context_list_controller.js"
+				"newcomp",
+				"src/app/visualization/compare/new_compare_modal.html"
 			],
 			[
 				"context",
 				"src/app/contexts/context_detail.html"
 			],
 			[
-				"contextdeta",
+				"contextde",
 				"src/app/contexts/context_detail_controller.js"
+			],
+			[
+				"applicatio",
+				"src/application.html"
+			],
+			[
+				"appl",
+				"src/application.html"
+			],
+			[
+				"newcon",
+				"src/app/visualization/new_context_modal.html"
+			],
+			[
+				"newcont",
+				"src/app/visualization/new_context_modal_controller.js"
+			],
+			[
+				"contextdeta",
+				"src/app/contexts/context_detail.html"
+			],
+			[
+				"contextdet",
+				"src/app/contexts/context_detail_controller.js"
+			],
+			[
+				"indicator",
+				"src/app/components/directives/indicator/indicator.html"
+			],
+			[
+				"newcontext",
+				"src/app/visualization/new_context_modal.html"
+			],
+			[
+				"contextlist",
+				"src/app/contexts/context_list_controller.js"
+			],
+			[
+				"dataset",
+				"src/app/datasets/dataset_list_controller.js"
+			],
+			[
+				"na",
+				"src/app/partials/nav.html"
+			],
+			[
+				"compare_pa",
+				"src/app/visualization/compare/compare_partial.html"
 			],
 			[
 				"lay",
@@ -1109,10 +1271,6 @@
 			[
 				"indi",
 				"src/app/components/directives/indicator/indicator.html"
-			],
-			[
-				"contextde",
-				"src/app/contexts/context_detail.html"
 			],
 			[
 				"module",
@@ -1127,14 +1285,6 @@
 				"src/app/components/services/context_resource.js"
 			],
 			[
-				"layer",
-				"src/app/components/directives/map/layer.js"
-			],
-			[
-				"visu",
-				"src/app/visualization/visualization_controller.js"
-			],
-			[
 				"visua",
 				"src/app/visualization/visualization.html"
 			],
@@ -1143,24 +1293,12 @@
 				"src/app/datasets/dataset_create_modal_controller.js"
 			],
 			[
-				"modu",
-				"src/app/css/modules.css"
-			],
-			[
 				"base",
 				"src/app/css/base.css"
 			],
 			[
 				"contextopti",
 				"src/app/visualization/context_options_controller.js"
-			],
-			[
-				"app",
-				"src/app/app.js"
-			],
-			[
-				"newcon",
-				"src/app/visualization/new_context_modal.html"
 			],
 			[
 				"newc",
@@ -1177,10 +1315,6 @@
 			[
 				"map",
 				"src/app/components/directives/map/map.js"
-			],
-			[
-				"indicator",
-				"src/app/components/directives/indicator/indicator.js"
 			],
 			[
 				"vis",
@@ -1245,10 +1379,6 @@
 			[
 				"options",
 				"src/app/visualization/context_options_controller.js"
-			],
-			[
-				"appjs",
-				"src/app/app.js"
 			],
 			[
 				"nav",
@@ -1329,10 +1459,6 @@
 			[
 				"",
 				"spacial_analysis_api/Gemfile"
-			],
-			[
-				"dataset",
-				"spacial_analysis_api/app/models/dataset.rb"
 			],
 			[
 				"create",
@@ -1471,10 +1597,6 @@
 				"spec/models/geometry/rectangle_spec.rb"
 			],
 			[
-				"appl",
-				"config/application.rb"
-			],
-			[
 				"bounds",
 				"app/models/spacial/map_bounds.rb"
 			],
@@ -1568,7 +1690,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 256.0,
+	"side_bar_width": 124.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

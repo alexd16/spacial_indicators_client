@@ -1,6 +1,8 @@
 var app = angular.module('app');
 
-app.controller('ContextListController', function($scope, $modal, $state, ContextResource){
+app.controller('ContextListController', function($scope, $modal, $state, ContextResource, selectedDataset, $q){
+  selectedDataset.name = '';
+  selectedDataset.id = 0;
   $scope.compareList = [];
 
   ContextResource.getList().then(function(_contexts){
@@ -23,9 +25,13 @@ app.controller('ContextListController', function($scope, $modal, $state, Context
     var modalInstance = $modal.open({
       templateUrl: 'app/visualization/compare/new_compare_modal.html',
       controller: 'NewCompareModalController',
+      windowClass: 'wide-modal',
       resolve: {
-        contextIds: function(){
-          return contextIds;
+        contexts: function(){
+          //return contextIds;
+          return $q.all(_.map(contextIds, function(context){
+            return ContextResource.get(context._id.$oid)
+          }));
         }
       }
     });

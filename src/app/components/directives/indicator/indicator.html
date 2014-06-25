@@ -9,9 +9,7 @@
         data="data"
         showXAxis="true"
         showYAxis="true"
-        height="350"
-        
-        >
+        height="350">
       </nvd3-multi-bar-chart>
     </div>
     <div ng-switch-when="pair_collection">
@@ -20,6 +18,25 @@
         data="data"
         height="350">
       </nvd3-scatter-chart>
+    </div>
+    <div ng-switch-when="multi_pair_collection">
+      <nvd3-scatter-chart
+        id="{{id}}"
+        data="data"
+        height="350"
+        color="colorFunction()">
+      </nvd3-scatter-chart>
+    </div>
+    <div ng-switch-when="long_value_collection">
+      <nvd3-line-chart
+      id="{{id}}"
+      data="data"
+      height="350"
+      showXAxis="true"
+      showYAxis="true"
+      >
+      <svg></svg>
+      </nvd3-line-chart>
     </div>
   </div>
 </div>

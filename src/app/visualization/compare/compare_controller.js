@@ -1,7 +1,7 @@
 
 var app = angular.module('app');
 
-app.controller('CompareController', function($scope, mapDefault, contexts, indicatorIndex){
+app.controller('CompareController', function($scope, mapDefault, contexts, indicatorIndexes){
   var layerOptions = {
     type: 'dot-layer', 
     config: {
@@ -9,7 +9,7 @@ app.controller('CompareController', function($scope, mapDefault, contexts, indic
     }
   }
 
-  $scope.indicatorIndex = indicatorIndex;
+  $scope.indicatorIndexes = indicatorIndexes;
   $scope.contexts = contexts;
   $scope.maps = [angular.copy(mapDefault), angular.copy(mapDefault), angular.copy(mapDefault)];
   $scope.layers = [angular.copy(layerOptions), angular.copy(layerOptions), angular.copy(layerOptions)];

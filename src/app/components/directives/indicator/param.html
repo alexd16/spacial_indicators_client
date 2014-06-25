@@ -1,0 +1,34 @@
+<div ng-switch on="param.type" >
+  <div ng-switch-when="multiple_options_list">
+    <label class="col-lg-2 control-label">{{param.name}}</label>
+    <div class="col-lg-10">
+      <label ng-repeat="option in param.options" class="checkbox-inline">
+        <input type="checkbox" checklist-value="option" checklist-model="model[param.name]">
+        <span>{{option}}</span>
+      </label>
+    </div>
+  </div>
+  <div ng-switch-when="single_options_list">
+    <label class="col-lg-2 control-label">{{param.name}}</label>
+    <div class="col-lg-10">
+      <label class="radio-inline" ng-repeat="option in param.options">
+        <input type="radio" name="radio-group-{{id}}" ng-model="model[param.name]" ng-value="option">
+        <span>{{option}}</span>
+      </label>
+    </div>
+  </div>
+  <div ng-switch-when="boolean">
+    <label class="col-lg-2 control-label">{{param.name}}</label>
+    <div class="col-lg-10">
+      <label class="checkbox-inline">
+        <input type="checkbox" ng-model="model[param.name]">
+      </label>
+    </div>
+  </div>
+  <div ng-switch-when="value">
+    <label class="col-lg-4 control-label text-left">{{param.name}}</label>
+    <div class="col-lg-5">
+      <input type="number" class="form-control" ng-model="model[param.name]">
+    </div>
+  </div>
+</div>

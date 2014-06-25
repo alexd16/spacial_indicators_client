@@ -18,22 +18,22 @@
       </div>
       <div class="clearfix"></div>
       <h4>Indicators Configuration</h4>
-      <div class="col-lg-6" ng-repeat="(iindex, indicator) in indicators">
+      <div class="col-lg-6" ng-repeat="indicator in indicators">
         <div class="panel panel-default">
           <div class="panel-heading">{{indicator.name}}</div>
           <div class="panel-body">
-            <p ng-hide="indicator.params">No configuration</p>
-            <div class="form-group" ng-repeat="(pindex, param) in indicator.params" ng-show="indicator.params">
-              <label for="" class="col-lg-2 control-label">{{param.name}}</label>
-              <div class="col-lg-10" ng-switch on="param.type">
-                <div ng-switch-when="multiple_options_list">
-                  <label  ng-repeat="option in param.options" class="checkbox-inline">
-                    <input type="checkbox" checklist-value="option" checklist-model="contextIndicators[iindex].config[param.name]">
-                    <span>{{option}}</span>
-                  </label>
-                </div>
+            <div ng-repeat="(iindex, contextIndicator) in contextIndicators | filter:{name: indicator.name}:true">
+              <p>{{iindex+1}}º Configuration</p>
+              <p ng-hide="indicator.params">No configuration</p>
+              <div 
+                class="form-group" 
+                ng-repeat="(pindex, param) in indicator.params"  
+                ng-show="indicator.params" 
+                param="param" 
+                model="contextIndicator.config">
               </div>
             </div>
+            <a class="btn btn-primary pull-right" ng-click="addContextIndicator(indicator)">Add Configuration</a>
           </div>
         </div>
       </div>

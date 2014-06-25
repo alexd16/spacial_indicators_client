@@ -50,11 +50,11 @@ app
         }
       })
       .state('compare', {
-        url: '/compare?ids&selectedIndicator',
+        url: '/compare?ids&selectedIndicators',
         templateUrl: 'app/visualization/compare/compare.html',
         controller: 'CompareController',
         resolve: {
-          contexts: function($stateParams, ContextResource){
+          contexts: function($stateParams, ContextResource, $q){
             var contexts = [];
             var ids = arrayFormat('ids', JSON.parse($stateParams.ids));
             return ContextResource.getList({q:  {context_ids: JSON.parse($stateParams.ids)} });
@@ -64,9 +64,9 @@ app
               return key+'[]='+array.join('&'+key+'[]=');
             }
           },
-          indicatorIndex: function($stateParams){
-            var indicatorIndex = $stateParams.selectedIndicator;
-            return indicatorIndex;
+          indicatorIndexes: function($stateParams, ContextIndicatorResource){
+            var indexes = JSON.parse($stateParams.selectedIndicators);
+            return $q.all(_.map(indexes, function(id){ return ContextIndicatorResource.get(id)}))
           }
         }
       })
@@ -91,5 +91,4 @@ app
   ;
 
 app.controller('AppController', function($scope){
-  
 });

@@ -88,10 +88,12 @@
           var gpsCoords, start, x, y;
           start = tile.multiplyBy(tileSize);
           gpsCoords = new L.LatLng(point.latitude, point.longitude);
-          if(slice !== null && !slice.contains(gpsCoords)) { return; }
+          if(slice !== null && !slice.contains(gpsCoords)) { return true; }
+          bounds.extend(gpsCoords);
           point = map.project(gpsCoords);
           x = point.x - start.x;
           y = point.y - start.y;
+          //if(x > 256 || y > 256 || x < 0 || y < 0) { return true;}
           if(dotSize == 0){
             drawDot(x,y,context);
           }else{
